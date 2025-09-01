@@ -32,28 +32,10 @@ This project is tailored for the AI/ML bioinformatics community, aiming to accel
 - 📊 **Comprehensive Data Visualization** for dataset insights and results analysis
 - 🚀 **Deployed Web App** for easy and interactive usage
 
----
+-
 
-## ⚡ Installation
 
-```bash
-# Clone this repository
-git clone https://github.com/chakradharreddy545/skin-cancer-classification.git
-
-# Go into the repository
-cd skin-cancer-classification
-
-# (Optional) Create a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
----
-
-## 🚀 Usage
+``` #Usage
 
 1. Prepare your dataset in the specified format (see `data/` directory or documentation).
 2. Train or evaluate the model:
@@ -95,3 +77,9 @@ This project is licensed under the [MIT License](LICENSE).
 - Inspired by ongoing research in medical imaging and AI for healthcare.
 - Built with Python, TensorFlow/Keras, and Streamlit.
 - Special thanks to the open-source datasets and contributors to the tools used in this project.
+Python - version 3.11.4
+Matplotlib - version 3.7.1
+Numpy - version 1.24.3
+Pandas - version 1.5.3
+Seaborn - version 0.12.2
+Tensorflow - version 2.15.0
