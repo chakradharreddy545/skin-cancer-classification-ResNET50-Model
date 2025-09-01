@@ -1,4 +1,4 @@
-# Skin Cancer Classification 🩺🖥️
+# Skin Cancer Classification 
 
 A deep learning project for accurate identification of skin cancer using the powerful RESNET50 model.  
 Designed for AI/ML and bioinformatics professionals, researchers, and enthusiasts aiming to advance medical diagnostics with state-of-the-art computer vision.
