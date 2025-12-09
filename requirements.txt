@@ -1,9 +1,8 @@
-streamlit
-numpy
+streamlit==1.22.0
 tensorflow
+numpy
 opencv-python
 Pillow
 matplotlib
 pandas
 fpdf
-

@@ -11,6 +11,7 @@ Designed for AI/ML and bioinformatics professionals, researchers, and enthusiast
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [App Demo](#app-demo)
 - [Contributing](#contributing)
 - [License](#license)
@@ -31,22 +32,65 @@ This project is tailored for the AI/ML bioinformatics community, aiming to accel
 - 🔍 **Model Explainability** via GRAD-CAM visualizations
 - 📊 **Comprehensive Data Visualization** for dataset insights and results analysis
 - 🚀 **Deployed Web App** for easy and interactive usage
+- 📄 **PDF Reporting** generate and download diagnostic reports
+- 🔄 **Test-Time Augmentation** for robust predictions
 
--
+---
 
+## 📦 Installation
 
-``` #Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/skin-cancer-classification.git
+   cd skin-cancer-classification
+   ```
 
-1. Prepare your dataset in the specified format (see `data/` directory or documentation).
-2. Train or evaluate the model:
-    ```bash
-    python train.py
-    ```
-3. Launch the deployed web app for interactive predictions:
-    ```bash
-    streamlit run app.py
-    ```
-4. Explore model interpretability with GRAD-CAM and visualize results.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🚀 Usage
+
+### 1. Setup Model
+You need a trained model file (`skin_cancer_model.h5`) to run the app.
+
+**Option A: Create a Dummy Model (For Testing)**
+If you don't have the dataset but want to test the app UI and functionality:
+```bash
+python create_dummy_model.py
+```
+This will generate a lightweight `skin_cancer_model.h5` compatible with the app.
+
+**Option B: Train on HAM10000 Dataset**
+1. Download the [HAM10000 dataset](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) and extract it to a `ham10000` folder.
+2. Run the training script:
+   ```bash
+   python train.py
+   ```
+
+### 2. Run the App
+Launch the Streamlit web app:
+```bash
+streamlit run app.py
+```
+The app will open in your default browser at `http://localhost:8501`.
+
+---
+
+## ☁️ Deployment
+
+To deploy this app to **Streamlit Community Cloud**:
+
+1. Push this repository to GitHub.
+2. Log in to [Streamlit Community Cloud](https://streamlit.io/cloud).
+3. Click "New App".
+4. Select your repository, branch, and main file path (`app.py`).
+5. Click "Deploy".
+
+*Note: Ensure `requirements.txt` is present in the repository so Streamlit Cloud can install the necessary packages.*
 
 ---
 
@@ -77,9 +121,3 @@ This project is licensed under the [MIT License](LICENSE).
 - Inspired by ongoing research in medical imaging and AI for healthcare.
 - Built with Python, TensorFlow/Keras, and Streamlit.
 - Special thanks to the open-source datasets and contributors to the tools used in this project.
-Python - version 3.11.4
-Matplotlib - version 3.7.1
-Numpy - version 1.24.3
-Pandas - version 1.5.3
-Seaborn - version 0.12.2
-Tensorflow - version 2.15.0
